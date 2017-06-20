@@ -85,15 +85,6 @@ window.addEventListener('keyup', function(evt){
 	kPress =false;
 });
 
-window.addEventListener('touchstart', function(evt){
-	if(evt.keyCode == 32) player.speedY = -5;
-	kPress =true;
-});
-
-window.addEventListener('touchend', function(evt){
-	kPress =false;
-});
-
 var interval = setInterval(function(){
 	obsCounter = obsArrayTop.length;
 	gameCanvas.draw();
